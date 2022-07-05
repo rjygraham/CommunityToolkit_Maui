@@ -11,13 +11,14 @@ using AndroidX.Camera.Lifecycle;
 using AndroidX.Camera.View;
 using AndroidX.Core.Content;
 using AndroidX.Lifecycle;
+using CommunityToolkit.Maui.Core.Handlers;
 using CommunityToolkit.Maui.Core.Primitives;
 using CommunityToolkit.Maui.Core.Views.CameraView;
 using Java.Lang;
 using Java.Util.Concurrent;
 using static Android.Media.Image;
 
-namespace CommunityToolkit.Maui.Core.Handlers;
+namespace CommunityToolkit.Maui.Core;
 
 class Bla : CameraManager
 {

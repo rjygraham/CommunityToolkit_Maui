@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using CommunityToolkit.Maui.Core.Primitives;
 using Microsoft.Maui.ApplicationModel;
 
-namespace CommunityToolkit.Maui.Core.Handlers;
+namespace CommunityToolkit.Maui.Core;
 public partial class CameraManager
 {
 	readonly IMauiContext mauiContext;
@@ -34,7 +34,7 @@ public partial class CameraManager
 	protected virtual partial void PlatformTakePicture();
 }
 
-#if NET6_0 && !ANDROID
+#if NET6_0 && !ANDROID && !IOS && !MACCATALYST
 public partial class CameraManager
 {
 	protected virtual partial void PlatformConnect() { }
